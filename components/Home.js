@@ -28,7 +28,7 @@ function Home() {
         let cards = [];
         //console.log('je suis dans le .then')
         for (let i = 0; i < data.movies.results.length; i++) {
-          const { title, overview, poster_path, vote_average, vote_count } = data.movies.results[i];
+          const { title, overview, poster_path, vote_average, vote_count } = data.movies[i];
 
           const card = {
             title: title,
